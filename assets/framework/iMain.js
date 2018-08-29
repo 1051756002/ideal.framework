@@ -381,7 +381,23 @@ var ideal = window.ideal = {};
 
 // ############# 网络模块 #############
 (function(ideal) {
+	/**
+	 * 网络管理类(Socket)
+	 * @type {iNet}
+	 */
+	ideal.net = require('./network/iNet');
 
+	/**
+	 * HTTP请求管理类
+	 * @type {iHttp}
+	 */
+	ideal.http = require('./network/iHttp');
+
+	/**
+	 * 业务服务管理类
+	 * @type {iService}
+	 */
+	ideal.service = require('./network/iService');
 })(ideal);
 
 
